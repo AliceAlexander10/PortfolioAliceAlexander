@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*En-tête*/
+header{
+    background-color: #03989E;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Logo du réseau*/
+.logoreseau{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logopf{
+    height: 50px;
+    width: 50px;
+}
+
+#logoinsta, #logolink, #logogmail{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+
+/*Menu*/
+.pfbarre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(241, 241, 241, 0.75); 
+}
+
+#accueil:hover, #info:hover, #contact:hover{
+    border: 2px solid #03989E;
+    padding: 10px;
+}
+
+.logoreseau >.logo{
+    display: flex;
+    flex-direction: column;
+}
+
+#titre1{
+    color: #03989E;
+    text-decoration: none;
+}
+
+.pfbarre :where(a){
+    text-decoration: none;
+    color: #03989E;
+    font-weight: bold;
+    font-size: larger;
+    list-style: none;
+
+}
+
+.barreNav{
+    width: 30%;
+}
+
+/*Barre de navigation*/
+.barreNav > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titre2{
+    color: #FFFFFFFF;
+    margin-left: 30px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+/*Menu burger*/
+.menu {
+	overflow: hidden;
+}
+
+.menu__icon {
+	display: none;
+	font-size:31px;
+	color:#FFFFFFFF;
+	background: #03989E;
+	border:none;
+}
+
+.menu__icon:hover {
+	cursor:pointer;
+}
+
+/**/
+.titredark{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dark{
+    font-size:31px;
+	color:#FFFFFFFF;
+}
+
+/* */
+main :where(h1){
+    text-align: center;
+    color: #03989E;
+    margin: 2%;
+}
+
+main :where(h2){
+    color: #03989E;
+    margin: 2%;
+}
+
+main :where(p){
+    font-size:larger;
+    margin: 4%;
+}
+
+main :where(img){
+    height: 60%;
+    width: 60%;
+}
+
+#txt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    background-color: #03989E;
+    text-align: center;
+}
+
+footer > ol > li{
+    list-style-type: none;
+}
+
+footer > ol > li >a{
+    color: #FFFFFFFF;
+}
