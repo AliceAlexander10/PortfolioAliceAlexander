@@ -61,12 +61,12 @@ header{
 
 }
 
-.barreNav{
+nav{
     width: 30%;
 }
 
 /*Barre de navigation*/
-.barreNav > ul{
+nav > ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,6 +81,23 @@ header{
 ul{
     list-style: none;
 }
+
+/*Menu burger*/
+.menu {
+	overflow: hidden;
+}
+
+.menu__icon {
+	display: none;
+	font-size:31px;
+	color:#03989E;
+	background: rgba(241, 241, 241, 0.75);
+	border:none;
+}
+
+.menu__icon:hover {
+	cursor:pointer;
+}  
 
 /**/
 .titredark{
@@ -148,4 +165,32 @@ footer > ol > li{
 
 footer > ol > li >a{
     color: #FFFFFFFF;
+}
+
+/*Activation menu burger*/
+@media all and (max-width: 800px) {
+	.menu{
+		display: none;
+	}
+
+	.menu__icon {
+	  display: flex;
+	}
+
+	.menu.responsive {
+		position: relative;
+	}
+
+	.menu.responsive > .menu__icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+
+	.menu.responsive > a {
+		float: none;
+	  	display: block;
+		text-align: left;
+		font-size: 20px;
+	}
 }
