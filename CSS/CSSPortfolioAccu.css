@@ -205,5 +205,16 @@ footer > ol > li >a{
 		text-align: right;
 		font-size: 20px;
 	}
+
+    nav > ul{
+        flex-direction: column;
+    }
+
+    #gifpgm, #logobtssio {
+        display: none;
+    }
+
+    #intro, #bts, #staspais{
+        flex-direction: column;    }
     
 }
