@@ -3,95 +3,75 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio Alice Alexander</title>
+        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
         <link href="CSS/CSSPortfolioAccu.css" rel="stylesheet"/>
+        <link href="CSS/cssFooter.css" rel="stylesheet"/>
+
+
         <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
         <script src="JS\menuburger.js"></script>
     </head>
     <body>
         <header>
-            
-            <div class="logoreseau">
+            <div class="logo">
                 <a href="index.html"><img id="logopf" src="Img\En_tete\Logo_Protfolio.png" alt="Logo_pf"/></a>
-
-                <div id="reseau">
-                    <a href="https://www.instagram.com/alicemarie.alexander/" target="_blank"><img id="logoinsta" src="Img\En_tete\Logo_insta_bis.jpg" alt="logoinsta"/></a>
-                    <a href="https://www.linkedin.com/in/alice-alexander-b2725a267/" target="_blank"><img id="logolink" src="Img\En_tete\Logo_linkedin_bis.jpg" alt="logolink"/></a>
-                    <a href="mailto:alicemarie.alexander@gmail.com" target="_blank"><img id="logogmail" src="Img\En_tete\Logo_gmail_bis.jpg" alt="logogmail"/></a>    
+                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Informations</button>
+                    <div class="dropdown-content">
+                        <a href="PortfolioCompetence.html">Compétences</a>
+                        <a href="PortfolioExpPro.html">Expériences</a>
+                        <a href="PortfolioProjets.html">Projets</a>
+                        <a href="PortfolioVT.html">Veille Technologique</a>
+                    </div>
                 </div>
-            </div>
-            <div class="pfbarre">
-                <h1 id="titre1">Portfoilo</h1>
-                <nav>
-                    <button href="javascript:void(0);" class="menu__icon" onclick="toggleMenu()">&#x2630</button>
-                    <ul class="menu" id="toggleMenu">
-                        <li id="accueil"><a href="#"> &#x2654 Accueil</a></li>
-                        <li id="info"><a href="PortfolioInfo.html">Informations</a></li>
-                        <li id="contact"><a href="PortfolioContact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="titredark">
-                <h2 id="titre2">Alice ALEXANDER</h2>
-            </div>
+                <a href="PortfolioContact.html">Contact</a>
+            </nav>    
         </header>
 
         <main>
             <h1>Bienvenue sur mon Portfolio</h1>
             <article id="intro">
-                <div id="texte">
-                    <h2>Introduction</h2>
-                    <div id="txt">
-                        <p>Je vous souhaite la bienvenue sur mon portfolio virtuel qui recense toute mes réalisation faites au cours de mes deux années de BTS SIO et mes projets personnels.
-                            Je suis actuellement en recherche d'un stage dans le domaine informatique pour valider ma première année.
-                        </p>
-                    </div>
-                </div>
-                <div id="imgmain">
-                    <img id="gifpgm" src="Img\Page_acceuil\gif_pgm.gif" alt="Image Programmation"/>
-                </div>
+                <p>
+                    Je vous souhaite la bienvenue sur mon portfolio virtuel qui recense toute mes réalisations faites au cours de mes deux années de BTS SIO et mes projets personnels.
+                    Je suis actuellement en recherche d'une alternance pour la rentrée 2025 dans le domaine informatique, plus précisément dans la cybersécurité pour enter en licence.
+                </p>
             </article>
 
             <article id="bts">
-                <div id="texte">
-                    <h2>BTS SIO, qu'est ce que c'est ?</h2>
-                    <div id="txt">
-                        <p>
-                            Le BTS SIO est le diminutif de « Brevet de Technicien Supérieur en Services Informatiques aux Organisations ». Ce dernier est une formation
-                            qui s’étend sur deux ans après l’obtention d’un baccalauréat professionnel, technologique mais aussi général.
-                        </p>
-                        <br>
-                        <p>
-                            A la fin du premier semestre de cette formation, les étudiants choisissent l’une des options proposées :
-                        </p>
-                    </div>
-
-                    <div id="txt">
-                        <h3>L’option SISR :</h3>
-                        <br>
+                <h2>BTS SIO, qu'est ce que c'est ?</h2>
+                <div id="txt">
+                    <p>
+                        Le BTS SIO est le diminutif de « Brevet de Technicien Supérieur en Services Informatiques aux Organisations ». Ce dernier est une formation
+                        qui s’étend sur deux ans après l’obtention d’un baccalauréat professionnel, technologique mais aussi général.
+                    </p>
+                    <p>
+                        A la fin du premier semestre de cette formation, les étudiants choisissent l’une des options proposées :
+                    </p>
+                </div>
+                <div id="option">
+                    <div id="txtSISR">
+                        <h3>SISR </h3>
                         <p>
                             Les étudiants de ce cursus réalisent une solution d’infrastructure réseaux et l’adapte lors de l’épreuve de BTS fin de 2ème année.
                             Leurs domaines d’activité se résume à essentiellement à la conception une solution d’infrastructure réseau, à la sécuriser et là configurer pour que l’utilisation par l’utilisateur soit la plus optimale .
                         </p>
                     </div>
-
-                    <div id="txt">
-                        <h3>L’option SLAM : </h3>
-                        <br>
+                    <div id="txtSLAM">
+                        <h3>SLAM </h3>
                         <p>
                             Les étudiants de ce cursus réalisent une solution d’application et l’adapte lors de l’épreuve de BTS fin de 2ème année.
                             Leurs domaines d’activité se résume à cette fois-ci à concevoir et développer une solution applicative, assurer la maintenance corrective mais aussi la sécurité des conceptions.
                         </p>
                     </div>
-
-                    <div id="txt">
-                        <p>
-                            Pour plus d’information, vous avez à votre disposition le <a href="https://pedagogie.ac-reunion.fr/fileadmin/ANNEXES-ACADEMIQUES/03-PEDAGOGIE/02-COLLEGE/langues-vivantes/anglais/images_Nawaz/BTS_SIO/REFERENTIEL_BTS_SIO-_RENOVATION_SESSION_2022-SIGNETS.pdf" target="_blank">référentiel du BTS SIO</a> ci-dessous.
-                        </p>
-                    </div>
-                    
                 </div>
-                <div id="imgmain">
-                    <img id="logobtssio" src="Img\Page_acceuil\logo_bts_sio.png" alt="Logo BTS SIO"/>
+                <div id="btsREF">
+                    <p>Pour plus d’information, vous avez à votre disposition le référentiel du BTS SIO ci-dessous.</p>
+                    <br>
+                    <a href="https://pedagogie.ac-reunion.fr/fileadmin/ANNEXES-ACADEMIQUES/03-PEDAGOGIE/02-COLLEGE/langues-vivantes/anglais/images_Nawaz/BTS_SIO/REFERENTIEL_BTS_SIO-_RENOVATION_SESSION_2022-SIGNETS.pdf" target="_blank">Référentiel BTS SIO</a>
                 </div>
             </article>
 
@@ -100,26 +80,22 @@
                     <h2>Institution Saint Aspais</h2>
                     <div id="txt">
                         <p>L'institution Saint Aspais est un regroupement du Lycée Saint Aspais et de Campus Saint Aspais. En effet, le campus propose plusieurs formations, à commencer du Bac+2 jusqu’au Bac+5. </p>
-                        <br>
-                        <p> Pour un exemple de cursus dans le domaine informatique, voici un parcours : </p>
-                        <br>
+                        <p> Pour un exemple de cursus dans le domaine informatique voici un parcours proposé par le campus de Saint Aspais: </p>
                         <p> BTS SIO (Services Informatique aux Organisations) &#x21A3 Licence Informatique &#x21A3 Mastère de Manager de Projets Informatiques </p>
-                        <br>
                         <p>Pour plus d'informations sur les autres formations proposées par l'Institution Saint Aspais, veuillez cliquer le logo ci-contre.</p>
                     </div>
                 </div>
                 <div id="imgmain">
-                    <a href="https://institutionsaintaspais.fr/campus/" target="_blank"><img id="logostaspais" src="Img\Page_acceuil\Logo_stAspais.png" alt="Logo campus St Aspais"/></a>
+                    <a href="https://institutionsaintaspais.fr/campus/" target="_blank"><img id="logostaspais" src="Img/Page_acceuil/Logo_stAs.png" alt="Logo campus St Aspais"/></a>
                 </div>
             </article>
         </main>
         <footer>
             <ol>
-                <li><a href="#intro">Introduction</a></li>
                 <li><a href="#bts">BTS SIO</a></li>
                 <li><a href="#staspais">Institution Saint Aspais</a></li>
             </ol>    
-            <p>&#xa9 2023 Copyright Alice Alexander</p>    
+            <p>&#xa9 2025 Copyright Alice Alexander</p>    
         </footer>
     </body>
 </html>
