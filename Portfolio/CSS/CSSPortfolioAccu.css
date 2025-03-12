@@ -1,0 +1,34 @@
+#option{
+    display: flex;
+}
+#txtSISR,#txtSLAM{
+    margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-color: #03989E;
+    border-radius: 50px;
+
+}
+#txtSISR>h3,#txtSLAM>h3{
+    text-align: center;
+}
+#btsREF>a{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #03989E;
+    border-radius: 50px;
+    padding: 13px;
+    margin: 10%;
+}
+#imgmain{
+    display: flex;
+    justify-content: center;
+}
+#logostaspais{
+    border: 5px solid;
+    border-color: #03989E;
+    border-radius: 50px;
+}
+#logostaspais:hover{
+    box-shadow: 10px 5px 5px #03989E;
+}
