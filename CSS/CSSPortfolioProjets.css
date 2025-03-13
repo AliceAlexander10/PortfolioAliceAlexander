@@ -11,5 +11,11 @@ ul>a{
     padding: 5px;
 }
 #trello{
+    max-width: 100%;
+    height: auto;
     padding-top: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    
 }
