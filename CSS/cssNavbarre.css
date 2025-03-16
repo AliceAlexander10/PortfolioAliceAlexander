@@ -150,3 +150,16 @@ main :where(h2){
 #txt{
     padding-left: 20px;
 }
+/* Article styling */
+article {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
