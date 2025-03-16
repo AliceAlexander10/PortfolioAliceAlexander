@@ -12,6 +12,11 @@
 #txtSISR>h3,#txtSLAM>h3{
     text-align: center;
 }
+
+#txtSISR>p,#txtSLAM>p{
+    text-align: justify;
+    padding: 15px;
+}
 #btsREF>a{
     color: #FFF;
     text-decoration: none;
@@ -31,4 +36,17 @@
 }
 #logostaspais:hover{
     box-shadow: 10px 5px 5px #03989E;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #option{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #option{
+        flex-direction: column;
+    }
 }
