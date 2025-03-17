@@ -1,11 +1,21 @@
-main :where(p){
-    margin-left: 20px;
+main :where(a){
+    background-color: #03989E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-article {
-    background-color: white;
-    border-radius: 15px;
-    padding: 25px;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#art{
+    border: solid 1px #000000;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#titre{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
 }

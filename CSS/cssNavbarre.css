@@ -69,6 +69,7 @@ nav details a:hover, nav a:hover{
 }
   
 details{
+    display: contents;
     font-size: 20px;
     color: rgba(241, 241, 241);
 }
@@ -79,6 +80,7 @@ summary:hover{
 }
 
 details[open] summary{
+    font-weight: bold;
     padding-bottom: 5px;
 }
 details[open] a{
