@@ -5,12 +5,19 @@
     margin-left: 10%;
     margin-top: 5%;
 }
+#logoRA{
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
 #logoC{
     border-radius: 15px;
     width: 70px;
     height: 70px;
     margin-left: 10%;
 }
-#logoR:hover,#logoC:hover{
+#logoR:hover,#logoC:hover,#logoRA:hover{
     box-shadow: 10px 5px 5px #03989E;
 }
