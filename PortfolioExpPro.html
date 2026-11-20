@@ -1,66 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Alice Alexander</title>
-        
-        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
-        <link href="CSS/CSSPortfolioExpPro.css" rel="stylesheet"/>
-        <link href="CSS/cssFooter.css" rel="stylesheet"/>
-
-        <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
-        <script src="JS\menuburger.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio d'Alice Alexander, développeuse full-stack (web et data) à la recherche d'une alternance de 24 mois.">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="Img/En_tete/Logo_Protfolio_rmbg.png" rel="icon">
+        <script src="JS/menuburger.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img id="logopf" src="Img/En_tete/Logo_Portfolio.png" alt="Logo_pf"/></a>
-                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
-            </div>
-            <button class="burger-menu" aria-label="Menu">
-                <img src="Img/En_tete/MenuBurger.png" alt="Menu burger">
-            </button>
+        <header class="site-header">
+            <a class="brand" href="index.html"><img src="Img/En_tete/Logo_Protfolio_rmbg.png" alt="" width="44" height="44"><span>Alice Alexander</span></a>
+            <button class="burger-menu" aria-label="Menu"><img src="Img/En_tete/MenuBurger.png" alt=""></button>
             <nav>
                 <a href="index.html">Accueil</a>
-                <details>
-                    <summary>Informations</summary>
-                    <a href="PortfolioCompetence.html">Compétences</a><br>
-                    <a href="PortfolioExpPro.html">Expériences</a><br>
-                    <a href="PortfolioProjets.html">Projets</a><br>
-                    <a href="PortfolioVT.html">Veille Technologique</a>
-                </details>
+                <a href="PortfolioProjets.html">Projets</a>
+                <a href="PortfolioExpPro.html" aria-current="page">Expériences</a>
+                <a href="PortfolioCompetence.html">Compétences</a>
+                <a href="PortfolioVT.html">Veille</a>
                 <a href="PortfolioContact.html">Contact</a>
-            </nav>    
+            </nav>
         </header>
-        <main>
-            <div class="container">
-                <h1>Expériences professionnelles</h1>
-                <article id="stage">
-                    <h2>Rapport de stage</h2>
-                    <div id="RS">
-                        <p>
-                            J'ai effectué mon stage de première année à l'UPEC, au campus de Fontainebleau. Voici ci-dessous le rapport consternant ce stage.
-                        </p>
-                        <a href="PDF/Rapport_stage/Alice_Alexander_Rapport_de_Stage_1ère_annee.pdf" target="_blank">Rapport de stage 1ère année</a>
-                        <p>
-                            Mon stage de deuxième année se déroule à la mairie de Montereau-Fault-Yonne. Ci-joint de rapport de stage qui recense les activités réalisées.
-                        </p>
-                        <a href="PDF/Rapport_stage/Alice_Alexander_Rapport_de_Stage_2eme_annee.pdf" target="_blank">Rapport de stage 2ème année</a>
-                    </div>
+        <main class="container">
+            <h1>Expériences professionnelles</h1>
+            <article class="card exp">
+                <div class="exp-head">
+                    <h3>Développeuse web</h3><span class="date">décembre 2025 – août 2026</span>
+                </div>
+                    <p class="org">EESM · Le Mée-sur-Seine</p>
+                    <ul>
+                        <li>Conception et déploiement d'une application web de suivi de chantier (tableau de bord) pour 8 utilisateurs (conducteur de travaux, assistante de travaux, personnels de chantier), avec une réduction de 10 % du temps de reporting</li><li>Site vitrine Astro : temps de chargement de 0,9 s et score Lighthouse de 74/100</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Astro</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
                 </article>
-                <article id="CVLM">
-                    <h2>CV et Lettre de motivation</h2>
-                    <div id="CVLM">
-                        <p>Vous trouverez ci-dessous mon CV et ma lettre de motivation.</p>
-                        <a href="PDF/CV/Alice_Alexander_CV.pdf" target="_blank">CV</a>
-                        <a href="PDF/CV/LM_Alice_Alexander_mairieMontereau.pdf" target="_blank">Lettre de motivation</a>    
+                <article class="card exp">
+                    <div class="exp-head">
+                        <h3>Stagiaire administratrice systèmes, réseaux et communication</h3><span class="date">janvier – février 2025</span>
                     </div>
-                </article>    
-            </div>
+                    <p class="org">Mairie de Montereau</p>
+                    <ul>
+                        <li>Renouvellement de 6 commutateurs du parc réseau</li>
+                        <li>Preuve de concept (virtualisation) : 4 VM déployées</li>
+                        <li>Mise à jour du contenu du nouveau site de la mairie</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>ArubaOS-CX</li>
+                        <li>Proxmox</li>
+                    </ul>
+                    <a class="btn sm" href="PDF/Rapport_stage/Alice_Alexander_Rapport_de_Stage_2eme_annee.pdf" target="_blank" rel="noopener">Rapport de stage</a>
+                </article>
+                <article class="card exp">
+                    <div class="exp-head">
+                        <h3>Stagiaire administratrice systèmes et réseaux</h3><span class="date">mai – juin 2024</span>
+                    </div>
+                    <p class="org">IUT Sénart-Fontainebleau (UPEC) · Fontainebleau</p>
+                    <ul>
+                        <li>Preuve de concept et mise en place d'un serveur Active Directory (6 postes)</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Windows</li>
+                        <li>Windows Server</li>
+                        <li>Active Directory</li>
+                        <li>Proxmox</li>
+                        <li>VirtualBox</li>
+                    </ul>
+                    <a class="btn sm" href="PDF/Rapport_stage/Alice_Alexander_Rapport_de_Stage_1ere_annee.pdf" target="_blank" rel="noopener">Rapport de stage</a>
+                </article>
+                <section class="card">
+                    <h2>Mon CV</h2>
+                    <p>La dernière version de mon CV, au format PDF.</p>
+                    <a class="btn" target="_blank" href="PDF/CV/Alice_Alexander_CV.pdf">Télécharger mon CV</a>
+                </section>
         </main>
         <footer>
-            <p>&#xa9 2025 Copyright Alice Alexander</p>    
+            <p><a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">LinkedIn</a> · <a href="https://github.com/AliceAlexander10">GitHub</a> · <a href="mailto:alicemarie.alexander@gmail.com">E-mail</a></p>
+            <p>&copy; <span id="year"></span> Alice Alexander</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
-

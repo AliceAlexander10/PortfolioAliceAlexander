@@ -1,104 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Alice Alexander</title>
-        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
-        <link href="CSS/CSSPortfolioAccu.css" rel="stylesheet"/>
-        <link href="CSS/cssFooter.css" rel="stylesheet"/>
-
-
-        <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
-        <script src="JS\menuburger.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio d'Alice Alexander, développeuse full-stack (web et data) à la recherche d'une alternance de 24 mois.">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="Img/En_tete/Logo_Protfolio_rmbg.png" rel="icon">
+        <script src="JS/menuburger.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img id="logopf" src="Img/En_tete/Logo_Portfolio.png" alt="Logo_pf"/></a>
-                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
-            </div>
+        <header class="site-header">
+            <a class="brand" href="index.html">
+                <img src="Img/En_tete/Logo_Protfolio_rmbg.png" alt="" width="44" height="44"><span>Alice Alexander</span>
+            </a>
             <button class="burger-menu" aria-label="Menu">
-                <img src="Img/En_tete/MenuBurger.png" alt="Menu burger">
+                <img src="Img/En_tete/MenuBurger.png" alt="">
             </button>
             <nav>
-                <a href="index.html">Accueil</a>
-                <details>
-                    <summary>Informations</summary>
-                    <a href="PortfolioCompetence.html">Compétences</a><br>
-                    <a href="PortfolioExpPro.html">Expériences</a><br>
-                    <a href="PortfolioProjets.html">Projets</a><br>
-                    <a href="PortfolioVT.html">Veille Technologique</a>
-                </details>
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="PortfolioProjets.html">Projets</a>
+                <a href="PortfolioExpPro.html">Expériences</a>
+                <a href="PortfolioCompetence.html">Compétences</a>
+                <a href="PortfolioVT.html">Veille</a>
                 <a href="PortfolioContact.html">Contact</a>
-            </nav>    
+            </nav>
         </header>
-
-        <main>
-            <div class="container">
-                <h1>Bienvenue sur mon Portfolio</h1>
-                <article id="intro">
-                    <p>
-                        Je vous souhaite la bienvenue sur mon portfolio virtuel qui recense toute mes réalisations faites au cours de mes deux années de BTS SIO et mes projets personnels.
-                        Je suis actuellement en recherche d'une alternance pour dans le domaine informatique, plus précisément dans la cybersécurité pour enter en licence.
-                    </p>
-                </article>
-    
-                <article id="bts">
-                    <h2>BTS SIO, qu'est ce que c'est ?</h2>
-                    <div id="txt">
-                        <p>
-                            Le BTS SIO est le diminutif de « Brevet de Technicien Supérieur en Services Informatiques aux Organisations ». 
-                            Ce dernier est une formation qui s'étend sur deux ans après l'obtention d'un baccalauréat professionnel, technologique et, dans certain cas, général.
-                        </p>
-                        <p>
-                            A la fin du premier semestre de cette formation, les étudiants choisissent l'une des options proposées :                        </p>
-                    </div>
-                    <div id="option">
-                        <div id="txtSISR">
-                            <h3>SISR </h3>
-                            <p>
-                                Les étudiants de ce cursus réalisent une solution d'infrastructure réseaux et l'adapte lors de l'épreuve de BTS fin de 2ème année.
-                                Leurs domaines d'activité se résume à essentiellement à la conception une solution d'infrastructure réseau, à la sécuriser et là configurer pour que l'utilisation par l'utilisateur soit la plus optimale .
-                            </p>
+        <main class="container">
+            <section class="hero">
+                <p class="eyebrow">Bonjour, je suis</p>
+                <h1>Alice Alexander</h1>
+                <p class="role">Développeuse Full-Stack (Web &amp; Data)</p>
+                <p class="lead">Étudiante en Mastère 1 Développement (ITIS Évry), avec 9 mois d'expérience en développement web (Astro, React, Node.js, PostgreSQL). Je recherche une <strong>alternance de 24 mois, dès que possible</strong> (1 semaine en école / 3 semaines en entreprise), pour concevoir des applications web sécurisées et orientées données, en méthode Agile.</p>
+                <div class="actions"><a class="btn " href="PortfolioProjets.html">Voir mes projets</a><a class="btn ghost" target="_blank" href="PDF/CV/Alice_Alexander_CV.pdf">Télécharger mon CV</a><a class="btn ghost" href="PortfolioContact.html">Me contacter</a></div>
+            </section>
+            <section><h2>Projets à la une</h2>
+                <!-- Pour ajouter une capture : remplace <div class="shot">…</div> par <img class="shot" src="Img/Projets/nom.png" alt="Capture de ..."> et ajoute un bouton « Code » vers le dépôt GitHub. -->
+                <div class="grid">
+                    <article class="card project">
+                        <div class="shot" aria-hidden="true">🐝</div>
+                        <div class="pbody">
+                            <h3>Queen Bee <span class="badge">En cours</span></h3>
+                            <p>Application de monitoring de ruche à distance, projet fil rouge de M1 réalisé en équipe de 5 étudiants à partir d'un cahier des charges commun. Mon rôle : architecture et modélisation de la base de données.</p>
+                            <ul class="tags">
+                                <li>MongoDB</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                            </ul>
+                            <div class="actions"></div>
                         </div>
-                        <div id="txtSLAM">
-                            <h3>SLAM </h3>
-                            <p>
-                                Les étudiants de ce cursus réalisent une solution d'application et l'adapte lors de l'épreuve de BTS fin de 2ème année.
-                                Leurs domaines d'activité se résume à cette fois-ci à concevoir et développer une solution applicative, assurer la maintenance corrective mais aussi la sécurité des conceptions.
-                            </p>
+                    </article>
+                    <article class="card project">
+                        <div class="shot" aria-hidden="true">🏗️</div>
+                        <div class="pbody">
+                            <h3>Suivi de chantier (EESM)</h3>
+                            <p>Conception et déploiement d'une application web de suivi de chantier (tableau de bord) pour 8 utilisateurs : conducteur de travaux, assistante de travaux et personnels de chantier. Résultat : 10 % de temps de reporting en moins.</p>
+                            <ul class="tags">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>PostgreSQL</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                            </ul>
+                            <div class="actions"></div>
                         </div>
-                    </div>
-                    <div id="btsREF">
-                        <p>Pour plus d'information, vous avez à votre disposition le référentiel du BTS SIO ci-dessous.</p>
-                        <br>
-                        <a href="https://pedagogie.ac-reunion.fr/fileadmin/ANNEXES-ACADEMIQUES/03-PEDAGOGIE/02-COLLEGE/langues-vivantes/anglais/images_Nawaz/BTS_SIO/REFERENTIEL_BTS_SIO-_RENOVATION_SESSION_2022-SIGNETS.pdf" target="_blank">Référentiel BTS SIO</a>
-                    </div>
-                </article>
-                <article id="staspais">
-                    <div id="texte">
-                        <h2>Institution Saint Aspais</h2>
-                        <div id="txt">
-                            <p>L'institution Saint Aspais est un regroupement du Lycée Saint Aspais et de Campus Saint Aspais. En effet, le campus propose plusieurs formations, à commencer du Bac+2 jusqu'au Bac+5. </p>
-                            <p> Pour un exemple de cursus dans le domaine informatique voici un parcours proposé par le campus de Saint Aspais: </p>
-                            <p> BTS SIO (Services Informatique aux Organisations) &#x21A3 Licence Informatique &#x21A3 Mastère de Manager de Projets Informatiques </p>
-                            <p>Pour plus d'informations sur les autres formations proposées par l'Institution Saint Aspais, veuillez cliquer le logo ci-contre.</p>
+                    </article>
+                    <article class="card project">
+                        <div class="shot" aria-hidden="true">🏡</div>
+                        <div class="pbody">
+                            <h3>Melogepa</h3>
+                            <p>Plateforme de location saisonnière façon Airbnb : quatre rôles (visiteur, client, hébergeur, administrateur), réservation et paiement en deux étapes, avis croisés réservés aux séjours confirmés et tableau de bord statistique pour l'administrateur.</p>
+                            <ul class="tags">
+                                <li>React</li>
+                                <li>styled-components</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="actions"></div>
                         </div>
-                    </div>
-                    <div id="imgmain">
-                        <a href="https://institutionsaintaspais.fr/campus/" target="_blank"><img id="logostaspais" src="Img/Page_acceuil/Logo_stAs.png" alt="Logo campus St Aspais"/></a>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
+                <p><a href="PortfolioProjets.html">Voir tous les projets →</a></p>
+            </section>
+            <section>
+                <h2>Technologies</h2>
+                <ul class="tags big">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Astro</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>PHP</li>
+                    <li>Symfony</li>
+                    <li>Laravel</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Parcours</h2>
+                <ol class="timeline">
+                    <li><b>2026 – 2028</b> · Mastère 1 Développement<br><small>ITIS, Évry</small></li>
+                    <li><b>2025 – 2026</b> · Licence informatique développement<br><small>Institution Saint Aspais, Melun</small></li>
+                    <li><b>2023 – 2025</b> · BTS SIO option SLAM, mention bien<br><small>Institution Saint Aspais, Melun</small></li>
+                    <li><b>2022 – 2023</b> · 1ère année de BUT Informatique<br><small>IUT, Fontainebleau</small></li>
+                </ol>
+            </section>
         </main>
-
         <footer>
-            <ol>
-                <li><a href="#bts">BTS SIO</a></li>
-                <li><a href="#staspais">Institution Saint Aspais</a></li>
-            </ol>    
-            <p>&#xa9 2025 Copyright Alice Alexander</p>    
+            <p><a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">LinkedIn</a> · <a href="https://github.com/AliceAlexander10">GitHub</a> · <a href="mailto:alicemarie.alexander@gmail.com">E-mail</a></p>
+            <p>&copy; <span id="year"></span> Alice Alexander</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
-
 </html>

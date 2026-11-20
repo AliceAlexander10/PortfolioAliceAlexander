@@ -1,184 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Alice Alexander</title>
-<!--
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
--->
-
-        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
-        <link href="CSS/CSSPortfolioCompetence.css" rel="stylesheet"/>
-        <link href="CSS/cssFooter.css" rel="stylesheet"/>
-
-        <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
-        <script src="JS\menuburger.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio d'Alice Alexander, développeuse full-stack (web et data) à la recherche d'une alternance de 24 mois.">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="Img/En_tete/Logo_Protfolio_rmbg.png" rel="icon">
+        <script src="JS/menuburger.js"></script>
+        <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img id="logopf" src="Img/En_tete/Logo_Portfolio.png" alt="Logo_pf"/></a>
-                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
-            </div>
-            <button class="burger-menu" aria-label="Menu">
-                <img src="Img/En_tete/MenuBurger.png" alt="Menu burger">
-            </button>
+        <header class="site-header">
+            <a class="brand" href="index.html"><img src="Img/En_tete/Logo_Protfolio_rmbg.png" alt="" width="44" height="44"><span>Alice Alexander</span></a>
+            <button class="burger-menu" aria-label="Menu"><img src="Img/En_tete/MenuBurger.png" alt=""></button>
             <nav>
                 <a href="index.html">Accueil</a>
-                <details>
-                    <summary>Informations</summary>
-                    <a href="PortfolioCompetence.html">Compétences</a><br>
-                    <a href="PortfolioExpPro.html">Expériences</a><br>
-                    <a href="PortfolioProjets.html">Projets</a><br>
-                    <a href="PortfolioVT.html">Veille Technologique</a>
-                </details>
+                <a href="PortfolioProjets.html">Projets</a>
+                <a href="PortfolioExpPro.html">Expériences</a>
+                <a href="PortfolioCompetence.html" aria-current="page">Compétences</a>
+                <a href="PortfolioVT.html">Veille</a>
                 <a href="PortfolioContact.html">Contact</a>
-            </nav>    
+            </nav>
         </header>
-
-        <main>
-            <div class="container">
-                <h1>Compétences informatiques</h1>
-                <p>
-                    Voici les compétences que j'ai pu développer au cours de mes formations. Chaque image ci-dessous renvois vers leur page de documentation.
-                </p>
-                <article id="LP">
-                    <h2 id="LP">Langage Programmation</h2>
-                        <a href="https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_C.png" alt="Logo C">
-                        </a>
-                        <a href="https://www.oracle.com/fr/java/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Java.png" alt="Logo Java">
-                        </a>
-                        <a href="https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Python.png" alt="Logo Python">
-                        </a>
-                        <a href="https://www.hostinger.fr/tutoriels/introduction-au-script-bash-avec-exemples" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Bash.png" alt="Logo Bash">
-                        </a>
-                        <a href="https://openclassrooms.com/fr/courses/7973891-apprenez-a-programmer-en-c" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Csharp.png" alt="Logo C#">
-                        </a>
-                </article>
-                <article id="PW">
-                    <h2 id="PW">Programmation web</h2>
-                        <a href="https://www.w3schools.com/html/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_HTML.png" alt="Logo HTML">
-                        </a>
-                        <a href="https://www.w3schools.com/css/">
-                            <img id="logoC" src="Img/Page_Competences/logo_CSS.png" alt="Logo CSS">
-                        </a>
-                        <a href="https://www.w3schools.com/js/default.asp" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_JS.png" alt="Logo Javascript">
-                        </a>
-                        <a href="https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Python.png" alt="Logo Python">
-                        </a>
-                        <a href="https://www.php.net/" target="_blank">
-                            <img id="logoR" src="Img/Page_Competences/logo_PHP.png" alt="Logo PHP">
-                        </a>
-                </article>
-                <article id="F">
-                    <h2 id="F">Framework</h2>
-                        <a href="https://codeigniter.com/" target="_blank">
-                            <img id="logoR" src="Img/Page_Competences/logo_Codeigniter.png" alt="Logo Codeigniter">
-                        </a>
-                        <a href="https://getbootstrap.com/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_BootStrap.png" alt="Logo BootStrap">
-                        </a>
-                        <a href="https://symfony.com/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Symfony.png" alt="Logo Symfony">
-                        </a>
-                </article>
-                <article id="M">
-                    <h2 id="M">Modélisation</h2>
-                        <a href="https://staruml.io/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/Logo_Staruml.png" alt="Logo StarUML">
-                        </a>
-                        <a href="https://www.looping-mcd.fr/" target="_blank">
-                            <img id="logoR"src="Img/Page_Competences/Logo_Looping.jpg" alt="Logo Looping">
-                        </a>
-                </article>
-                <article id="SE">
-                    <h2 id="SE">Systèmes d'exploitation</h2>
-                        <a href="https://archlinux.fr/" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/Logo_arch-linux.png" alt="Logo Arch linux">
-                        </a>
-                        <a href="https://www.debian.org/index.fr.html" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Debian.png" alt="Logo Debian">
-                        </a>
-                        <a href="https://www.ubuntu-fr.org/">
-                            <img id="logoC" src="Img/Page_Competences/logo_Ubuntu.png" alt="Logo Ubuntu">
-                        </a>
-                        <a href="https://www.kali.org/">
-                            <img id="logoC" src="Img/Page_Competences/Logo_Kali.jpg" alt="Logo Kali">
-                        </a>
-                        <a href="https://www.microsoft.com/fr-fr/windows?r=1" target="_blank">
-                            <img id="logoC" src="Img/Page_Competences/logo_Windows.png" alt="Logo Windows">
-                        </a>
-                        <a href="https://arubanetworking.hpe.com/techdocs/central/2.5.7/content/nms/aos-cx/cfg/conf-cx-switches.htm" target="_blank">
-                            <img id="logoR" src="Img/Page_Competences/Logo_Aruba-CX-OS.jpg" alt="Logo Aruba CX-OS">
-                        </a>
-                </article>
-                <article id="LS">
-                    <h2 id="LS">Langage de programmation structurelle</h2>
-                        <a href="https://sql.sh/" target="_blank">
-                            <img id="logoR"src="Img/Page_Competences/logo_SQL.png" alt="Logo SQL">
-                        </a>
-                </article>
-                <article id="S">
-                    <h2 id="S">Simulateur</h2>
-                        <a href="https://www.netacad.com/fr/courses/packet-tracer" target="_blank">
-                            <img id="logoR" src="Img/Page_Competences/Logo_PacketTracer.jpg" alt="Logo Packet tracer">
-                        </a>
-                </article>
-                <article id="A">
-                    <h2 id="A">Attestations certificatives</h2>
-                    <a href="PDF/Certifications/Attestation_ANSSI_Alice_Alexander.pdf" target="_blank">
-                        <img id="logoRA" src="Img/Page_Competences/Img_attestation_ANSSI.png" alt="Logo ANSSI">
-                    </a>
-                    <a href="PDF/Certifications/Attestation_pix_20250304_Alice_Alexander.pdf" target="_blank">
-                        <img id="logoRA" src="Img/Page_Competences/Img_attestation_pix.png" alt="Logo Pix">
-                    </a>    
-                    <a href="PDF/Certifications/Attestation_certificative_NDG_Linux_Alice_ALEXANDER.pdf" target="_blank">
-                        <img id="logoRA" src="Img/Page_Competences/Img_attestation_NDG_Linux.png" alt="">
-                    </a>
-                    <a href="PDF/Certifications/Attestation_certificative_Python_Alice_ALEXANDER.pdf" target="_blank">
-                        <img id="logoRA" src="Img/Page_Competences/Img_attestation_Python.png" alt="">
-                    </a>
-                    <a href="PDF/Certifications/Attestation_Introduction_Cyber_Alice_Alexander.pdf" target="_blank">
-                        <img id="logoRA" src="Img/Page_Competences/Img_attestation_Intro_cyber.png" alt="">
-                    </a>
-                </article>
-                <article id="B">
-                    <h2 id="B">Badges Cisco</h2>
-                        <span>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2305ce6b-255e-4745-966a-587fd9817e5a" data-share-badge-host="https://www.credly.com"></div>
-                        </span>
-                        <span>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5b763893-6a56-4793-b206-65e784ee3c7c" data-share-badge-host="https://www.credly.com"></div>
-                        </span>
-                        <span>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbee87df-69ee-4739-b408-256bacb92ec3" data-share-badge-host="https://www.credly.com"></div>
-                        </span>
-                </article>    
+        <main class="container">
+            <h1>Compétences informatiques</h1>
+            <p class="lead">Les compétences développées au cours de mes formations et expériences. Chaque pastille renvoie vers la documentation de la technologie.</p>
+            <section class="card">
+                <h2>Stack actuelle</h2>
+                <ul class="tags big">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Astro</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>FastAPI</li>
+                    <li>API REST</li>
+                    <li>Laravel</li>
+                </ul>
+            </section>
+            <div class="cols">
+                <section class="card">
+                    <h2>Langages</h2>
+                    <div class="chips">
+                        <a class="skill" href="https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_C.png" alt="" loading="lazy"><span>C</span></a>
+                        <a class="skill" href="https://www.oracle.com/fr/java/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Java.png" alt="" loading="lazy"><span>Java</span></a>
+                        <a class="skill" href="https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Python.png" alt="" loading="lazy"><span>Python</span></a>
+                        <a class="skill" href="https://www.hostinger.fr/tutoriels/introduction-au-script-bash-avec-exemples" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Bash.png" alt="" loading="lazy"><span>Bash</span></a>
+                        <a class="skill" href="https://openclassrooms.com/fr/courses/7973891-apprenez-a-programmer-en-c" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Csharp.png" alt="" loading="lazy"><span>C#</span></a>
+                        <a class="skill" href="https://sql.sh/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_SQL.png" alt="" loading="lazy"><span>SQL</span></a>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Développement web</h2>
+                    <div class="chips">
+                        <a class="skill" href="https://www.w3schools.com/html/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_HTML.png" alt="" loading="lazy"><span>HTML</span></a>
+                        <a class="skill" href="https://www.w3schools.com/css/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_CSS.png" alt="" loading="lazy"><span>CSS</span></a>
+                        <a class="skill" href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_JS.png" alt="" loading="lazy"><span>JavaScript</span></a>
+                        <a class="skill" href="https://www.php.net/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_PHP.png" alt="" loading="lazy"><span>PHP</span></a>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Frameworks</h2>
+                    <div class="chips">
+                        <a class="skill" href="https://codeigniter.com/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Codeigniter.png" alt="" loading="lazy"><span>Codeigniter</span></a>
+                        <a class="skill" href="https://getbootstrap.com/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_BootStrap.png" alt="" loading="lazy"><span>Bootstrap</span></a>
+                        <a class="skill" href="https://symfony.com/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Symfony.png" alt="" loading="lazy"><span>Symfony</span></a>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Modélisation et outils</h2>
+                    <div class="chips">
+                        <a class="skill" href="https://staruml.io/" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_Staruml.png" alt="" loading="lazy"><span>StarUML</span></a>
+                        <a class="skill" href="https://www.looping-mcd.fr/" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_Looping.jpg" alt="" loading="lazy"><span>Looping</span></a>
+                        <a class="skill" href="https://www.netacad.com/fr/courses/packet-tracer" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_PacketTracer.jpg" alt="" loading="lazy"><span>Packet Tracer</span></a>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Systèmes et réseaux</h2>
+                    <div class="chips">
+                        <a class="skill" href="https://archlinux.fr/" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_arch-linux.png" alt="" loading="lazy"><span>Arch Linux</span></a>
+                        <a class="skill" href="https://www.debian.org/index.fr.html" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Debian.png" alt="" loading="lazy"><span>Debian</span></a>
+                        <a class="skill" href="https://www.ubuntu-fr.org/" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Ubuntu.png" alt="" loading="lazy"><span>Ubuntu</span></a>
+                        <a class="skill" href="https://www.kali.org/" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_Kali.jpg" alt="" loading="lazy"><span>Kali</span></a>
+                        <a class="skill" href="https://www.microsoft.com/fr-fr/windows?r=1" target="_blank" rel="noopener"><img src="Img/Page_Competences/logo_Windows.png" alt="" loading="lazy"><span>Windows</span></a>
+                        <a class="skill" href="https://arubanetworking.hpe.com/techdocs/central/2.5.7/content/nms/aos-cx/cfg/conf-cx-switches.htm" target="_blank" rel="noopener"><img src="Img/Page_Competences/Logo_Aruba-CX-OS.jpg" alt="" loading="lazy"><span>Aruba CX</span></a>
+                    </div>
+                </section>
             </div>
+            <section class="card">
+                <h2>Attestations</h2>
+                <div class="chips">
+                    <a class="skill" href="PDF/Certifications/Attestation_ANSSI_Alice_Alexander.pdf" target="_blank" rel="noopener">
+                        <img src="Img/Page_Competences/Img_attestation_ANSSI.png" alt="" loading="lazy">
+                        <span>MOOC ANSSI</span>
+                    </a>
+                    <a class="skill" href="PDF/Certifications/Attestation_pix_20250304_Alice_Alexander.pdf" target="_blank" rel="noopener">
+                        <img src="Img/Page_Competences/Img_attestation_pix.png" alt="" loading="lazy">
+                        <span>Pix</span>
+                    </a>
+                    <a class="skill" href="PDF/Certifications/Attestation_certificative_NDG_Linux_Alice_ALEXANDER.pdf" target="_blank" rel="noopener">
+                        <img src="Img/Page_Competences/Img_attestation_NDG_Linux.png" alt="" loading="lazy">
+                        <span>Linux (NDG)</span>
+                    </a>
+                    <a class="skill" href="PDF/Certifications/Attestation_certificative_Python_Alice_ALEXANDER.pdf" target="_blank" rel="noopener">
+                        <img src="Img/Page_Competences/Img_attestation_Python.png" alt="" loading="lazy">
+                        <span>Python</span>
+                    </a>
+                    <a class="skill" href="PDF/Certifications/Attestation_Introduction_Cyber_Alice_Alexander.pdf" target="_blank" rel="noopener">
+                        <img src="Img/Page_Competences/Img_attestation_Intro_cyber.png" alt="" loading="lazy">
+                        <span>Introduction cybersécurité</span>
+                    </a>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Badges Cisco</h2>
+                <div class="chips">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2305ce6b-255e-4745-966a-587fd9817e5a" data-share-badge-host="https://www.credly.com"></div>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5b763893-6a56-4793-b206-65e784ee3c7c" data-share-badge-host="https://www.credly.com"></div>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbee87df-69ee-4739-b408-256bacb92ec3" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+
+            </section>
+
         </main>
         <footer>
-            <ol>
-                <li><a href="#LP">Langage Programmation</a></li>
-                <li><a href="#PW">Programmation web</a></li>
-                <li><a href="#F">Framework</a></li>
-                <li><a href="#M">Modélisation</a></li>
-                <li><a href="#SE">Systèmes d'exploitation</a></li>
-                <li><a href="#LS">Langage de programmation structurelle</a></li>
-                <li><a href="#S">Simulateur</a></li>
-                <li><a href="#A">Attestations certificatives</a></li>
-                <li><a href="#B">Badges Cisco</a></li>
-            </ol>
-            <p>&#xa9 2025 Copyright Alice Alexander</p>    
+            <p><a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">LinkedIn</a> · <a href="https://github.com/AliceAlexander10">GitHub</a> · <a href="mailto:alicemarie.alexander@gmail.com">E-mail</a></p>
+            <p>&copy; <span id="year"></span> Alice Alexander</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
-    <script type="text/javascript" async="" src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </html>

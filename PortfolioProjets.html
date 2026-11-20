@@ -1,113 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Alice Alexander</title>
-        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
-        <link href="CSS/CSSPortfolioProjets.css" rel="stylesheet"/>
-        <link href="CSS/cssFooter.css" rel="stylesheet"/>
-
-        <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
-        <script src="JS\menuburger.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio d'Alice Alexander, développeuse full-stack (web et data) à la recherche d'une alternance de 24 mois.">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="Img/En_tete/Logo_Protfolio_rmbg.png" rel="icon">
+        <script src="JS/menuburger.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img id="logopf" src="Img/En_tete/Logo_Portfolio.png" alt="Logo_pf"/></a>
-                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
-            </div>
+        <header class="site-header">
+            <a class="brand" href="index.html"><img src="Img/En_tete/Logo_Protfolio_rmbg.png" alt="" width="44" height="44">
+                <span>Alice Alexander</span>
+            </a>
             <button class="burger-menu" aria-label="Menu">
-                <img src="Img/En_tete/MenuBurger.png" alt="Menu burger">
+                <img src="Img/En_tete/MenuBurger.png" alt="">
             </button>
             <nav>
                 <a href="index.html">Accueil</a>
-                <details>
-                    <summary>Informations</summary>
-                    <a href="PortfolioCompetence.html">Compétences</a><br>
-                    <a href="PortfolioExpPro.html">Expériences</a><br>
-                    <a href="PortfolioProjets.html">Projets</a><br>
-                    <a href="PortfolioVT.html">Veille Technologique</a>
-                </details>
+                <a href="PortfolioProjets.html" aria-current="page">Projets</a>
+                <a href="PortfolioExpPro.html">Expériences</a>
+                <a href="PortfolioCompetence.html">Compétences</a>
+                <a href="PortfolioVT.html">Veille</a>
                 <a href="PortfolioContact.html">Contact</a>
-            </nav>    
+            </nav>
         </header>
-
-        <main>
-            <div class="container">
-                <h1>Projets et prodédures</h1>
-                <article class="but">
-                    <h2 id="but">BUT</h2>
-                        <ul>
-                            <li>Poste de travail avec un dual boot Windows-Arch linux </li>
-                                <a href="PDF/Notice_Installation_ArchLinux_Windows.pdf" target="_blank">Procédure</a>
-                            <li>Codage d'un jeu de pair en langage C</li>
-                            <li>Site de prise de rendez-vous en HTML, CSS et PHP</li>
-                            <li>Codage de l'algorithme d'Ariane avec un visuel en langage Java</li>
+        <main class="container">
+            <h1>Projets</h1>
+            <p class="lead">Une sélection de mes réalisations en développement web, avec les technologies utilisées.</p>
+            <!-- Pour ajouter une capture : remplace <div class="shot">…</div> par <img class="shot" src="Img/Projets/nom.png" alt="Capture de ..."> et ajoute un bouton « Code » vers le dépôt GitHub. -->
+            <div class="grid">
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">🐝</div>
+                    <div class="pbody">
+                        <h3>Queen Bee <span class="badge">En cours</span></h3>
+                        <p>Application de monitoring de ruche à distance, projet fil rouge de M1 réalisé en équipe de 5 étudiants à partir d'un cahier des charges commun. Mon rôle : architecture et modélisation de la base de données.</p>
+                        <ul class="tags">
+                            <li>MongoDB</li>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Python</li>
+                            <li>FastAPI</li>
                         </ul>
+                        <div class="actions"></div>
+                    </div>
                 </article>
-                <article class="bts">
-                    <h2 id="bts">BTS</h2>
-                        <ul>
-                            <li>Site de recette en HTML, CSS et PHP </li>
-                                <a href="http://alicealexander.alwaysdata.net/k2f/">Lien projet</a>
-                                <a href="https://trello.com/b/zTKl48tw/k2f-ap-s2" target="_blank">Lien trello</a>
-                            <li>Installation de Debian</li>
-                                <a href="PDF/Notice_VirtualBox_installation_Debian.pdf" target="_blank">Procédure</a>
-                            <li>Site de covoiturage en HTML, Bootstrap et PHP</li>
-                                <a href="http://alicealexander.alwaysdata.net/SaCovoit/">Lien projet</a>
-                                <a href="https://trello.com/b/XtHAPI2A/sacovoit" target="_blank">Lien trello</a>
-                            <li>Gestion des élèves et des statistiques en C# pour l'application web de covoiturage <br> Exemple du suivi de l'avencement du projet <img id="trello" src="Img/Trello_SaCovoit.png" alt="Img Trello"></li>
-                            <li>Site de gestionde casiers en HTML, CSS et PHP</li>
-                            <li>Réalisation d'une application web pour un club d'escrime en Symfony</li>
-                            <li>Réalisation d'un jeu de bataille en C#</li>
-                            <li>Mise en place un réseau local dans le cadre d'une immersion avec les Bac Pro SN</li>
-                                <a href="https://trello.com/b/VIutDkju/immersion-bac-pro-sn-et-bts-sio">Lien trello</a>
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">🏗️</div>
+                    <div class="pbody">
+                        <h3>Suivi de chantier (EESM)</h3>
+                        <p>Conception et déploiement d'une application web de suivi de chantier (tableau de bord) pour 8 utilisateurs : conducteur de travaux, assistante de travaux et personnels de chantier. Résultat : 10 % de temps de reporting en moins.</p>
+                        <ul class="tags">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                            <li>Git</li>
                         </ul>
+                        <div class="actions"></div>
+                    </div>
                 </article>
-                <article class="stage">
-                    <h2 id="stage">Stages</h2>
-                        <ul>
-                            <li>Mise en place d'un serveur Windows avec Active Directory pour le service administratif </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_configuration_AD.pdf" target="_blank">Procédure</a>
-                            <li>Installation d'une serveur DHCP sur un Windows serveur </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_DHCP.pdf" target="_blank">Procédure</a>
-                            <li>Mise en place d'un service d'impression </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_servImpression.pdf" target="_blank">Procédure</a>
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">🏡</div>
+                    <div class="pbody">
+                        <h3>Melogepa</h3>
+                        <p>Plateforme de location saisonnière façon Airbnb : quatre rôles (visiteur, client, hébergeur, administrateur), réservation et paiement en deux étapes, avis croisés réservés aux séjours confirmés et tableau de bord statistique pour l'administrateur.</p>
+                        <ul class="tags">
+                            <li>React</li>
+                            <li>styled-components</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
                         </ul>
+                        <div class="actions"></div>
+                    </div>
                 </article>
-                <article class="projetComp">
-                    <h2 id="projetComp">Projets complémentaires</h2>
-                        <ul>
-                            <li>Installation Vitual Box </li>
-                                <a href="https://www.it-connect.fr/installer-virtualbox-sur-windows-11-et-creer-sa-premiere-vm/" target="_blank">Procédure</a>
-                            <li>Installation serveur SSH </li>
-                                <a href="https://www.it-connect.fr/chapitres/installation-dun-serveur-ssh-et-premiere-connexion/" target="_blank">Procédure</a></li>
-                            <li>Installation serveur web (apache2) et d'une base de donnée (mariadb et phpmyadmin) </li>
-                                <a href="https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mariadb-php" target="_blank">Procédure</a>
-                            <li>Redirection de ports </li>
-                                <a href="PDF/Notice_VirtualBox_redirection_port.pdf" target="_blank">Procédure</a>
-                            <li>Installation WinSCP </li>
-                                <a href="https://www.tutos.eu/2175" target="_blank">Procédure</a>
-                            <li>Installation du serveur ftp </li>
-                                <a href="PDF/Notice_serv_ftp.pdf">Procédure</a>
-                            <li>Installation Windows 11 </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_installation_Windows11.pdf">Procédure</a>
-                            <li>Installation Windows Server </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_installation_WindowsServeur.pdf">Procédure</a>
-                            <li>Configuration de réseau NAT sous VirtualBox </li>
-                                <a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_reseauNAT.pdf">Procédure</a>
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">⚡</div>
+                    <div class="pbody">
+                        <h3>Site vitrine EESM</h3>
+                        <p>Site vitrine réalisé avec Astro : temps de chargement de 0,9 s et score Lighthouse de 74/100.</p>
+                        <ul class="tags">
+                            <li>Astro</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
-                </article>    
+                        <div class="actions">
+                            <a class="btn sm" href="https://preprod.eesm77.fr/" target="_blank" rel="noopener">Lien</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">🚗</div>
+                    <div class="pbody">
+                        <h3>SaCovoit</h3>
+                        <p>Application web de covoiturage (conducteurs, passagers, administrateur) avec une application C# de gestion des élèves et des statistiques. Projet suivi sur Trello.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                            <li>PHP</li>
+                            <li>C#</li>
+                        </ul>
+                        <div class="actions">
+                            <a class="btn sm" href="http://alicealexander.alwaysdata.net/SaCovoit/" target="_blank" rel="noopener">Démo</a>
+                            <a class="btn sm" href="https://trello.com/b/XtHAPI2A/sacovoit" target="_blank" rel="noopener">Trello</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="shot" aria-hidden="true">🍴</div>
+                    <div class="pbody">
+                        <h3>K2F, site de recettes</h3>
+                        <p>Site de recettes de cuisine développé en HTML, CSS et PHP, avec suivi de projet sur Trello.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                        </ul>
+                        <div class="actions">
+                            <a class="btn sm" href="http://alicealexander.alwaysdata.net/k2f/" target="_blank" rel="noopener">Démo</a>
+                            <a class="btn sm" href="https://trello.com/b/zTKl48tw/k2f-ap-s2" target="_blank" rel="noopener">Trello</a>
+                        </div>
+                    </div>
+                </article>
             </div>
+            <section class="card">
+                <h2>Autres projets</h2>
+                <ul>
+                    <li>Application web pour un club d'escrime (Symfony)</li>
+                    <li>Application de bureau en C# (jeu de bataille)</li>
+                    <li>Site de gestion de casiers (HTML, CSS, PHP)</li>
+                    <li>Site de prise de rendez-vous (HTML, CSS, PHP)</li>
+                    <li>Jeu de pair en langage C</li>
+                    <li>Algorithme d'Ariane avec interface visuelle en Java</li>
+                </ul>
+            </section>
+            <details class="card">
+                <summary>Administration systèmes et réseaux (procédures)</summary>
+                <ul>
+                    <li><a href="PDF/Notice_Installation_ArchLinux_Windows.pdf" target="_blank" rel="noopener">Dual boot Windows / Arch Linux</a></li>
+                    <li><a href="PDF/Notice_VirtualBox_installation_Debian.pdf" target="_blank" rel="noopener">Installation de Debian sous VirtualBox</a></li>
+                    <li><a href="PDF/Notice_VirtualBox_redirection_port.pdf" target="_blank" rel="noopener">Redirection de ports sous VirtualBox</a></li>
+                    <li><a href="PDF/Notice_serv_ftp.pdf" target="_blank" rel="noopener">Installation d'un serveur FTP</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_installation_Windows11.pdf" target="_blank" rel="noopener">Installation de Windows 11</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_installation_WindowsServeur.pdf" target="_blank" rel="noopener">Installation de Windows Server</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_VirtualBox_reseauNAT.pdf" target="_blank" rel="noopener">Réseau NAT sous VirtualBox</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_configuration_AD.pdf" target="_blank" rel="noopener">Windows Server : Active Directory</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_DHCP.pdf" target="_blank" rel="noopener">Windows Server : serveur DHCP</a></li>
+                    <li><a href="PDF/Stage_1ereAnnee/Notice_WindowsServeur_installation_servImpression.pdf" target="_blank" rel="noopener">Windows Server : service d'impression</a></li>
+                    <li><a href="https://trello.com/b/VIutDkju/immersion-bac-pro-sn-et-bts-sio" target="_blank" rel="noopener">Réseau local (immersion avec les Bac Pro SN), tableau Trello</a></li>
+                </ul>
+            </details>
         </main>
         <footer>
-            <ol>
-                <li><a href="#but">BUT</a></li>
-                <li><a href="#bts">BTS</a></li>
-                <li><a href="#stage">Stages</a></li>
-                <li><a href="#projetComp">Projets complémentaires</a></li>
-            </ol>
-            <p>&#xa9 2025 Copyright Alice Alexander</p>    
+            <p><a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">LinkedIn</a> · <a href="https://github.com/AliceAlexander10">GitHub</a> · <a href="mailto:alicemarie.alexander@gmail.com">E-mail</a></p>
+            <p>&copy; <span id="year"></span> Alice Alexander</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

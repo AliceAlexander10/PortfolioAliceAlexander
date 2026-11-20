@@ -1,82 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Alice Alexander</title>
-        <link href="CSS/cssNavbarre.css" rel="stylesheet"/>
-        <link href="CSS/CSSPortfolioContact.css" rel="stylesheet"/>
-        <link href="CSS/cssFooter.css" rel="stylesheet"/>
-
-        <link href="Img\En_tete\Logo_Protfolio_rmbg.png" rel="icon"/>
-        <script src="JS\menuburger.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio d'Alice Alexander, développeuse full-stack (web et data) à la recherche d'une alternance de 24 mois.">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="Img/En_tete/Logo_Protfolio_rmbg.png" rel="icon">
+        <script src="JS/menuburger.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img id="logopf" src="Img/En_tete/Logo_Portfolio.png" alt="Logo_pf"/></a>
-                <h1 id="titre">Portfoilo Alice ALEXANDER</h1>    
-            </div>
-            <button class="burger-menu" aria-label="Menu">
-                <img src="Img/En_tete/MenuBurger.png" alt="Menu burger">
-            </button>
-            <nav>
-                <a href="index.html">Accueil</a>
-                <details>
-                    <summary>Informations</summary>
-                    <a href="PortfolioCompetence.html">Compétences</a><br>
-                    <a href="PortfolioExpPro.html">Expériences</a><br>
-                    <a href="PortfolioProjets.html">Projets</a><br>
-                    <a href="PortfolioVT.html">Veille Technologique</a>
-                </details>
-                <a href="PortfolioContact.html">Contact</a>
-            </nav>    
+        <header class="site-header">
+            <a class="brand" href="index.html"><img src="Img/En_tete/Logo_Protfolio_rmbg.png" alt="" width="44" height="44"><span>Alice Alexander</span></a>
+            <button class="burger-menu" aria-label="Menu"><img src="Img/En_tete/MenuBurger.png" alt=""></button>
+            <nav><a href="index.html">Accueil</a><a href="PortfolioProjets.html">Projets</a><a href="PortfolioExpPro.html">Expériences</a><a href="PortfolioCompetence.html">Compétences</a><a href="PortfolioVT.html">Veille</a><a href="PortfolioContact.html" aria-current="page">Contact</a></nav>
         </header>
-
-        <main>
-            <div class="container">
-                <h1>Me Contacter</h1>
-                <article id="reseaux">
-                    <h2>Mes Réseaux sociaux</h2>
-                    <div id="txt">
-                        <div>
-                            <a href="mailto:alicemarie.alexander@gmail.com">
-                                <img id="logoR" src="Img\Page_contacter\Logo_gmail_2.png" alt="Logo Gmail">
-                            </a>
-                            <p>alicemarie.alexander@gmail.com</p>    
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/alicemarie.alexander/">
-                                <img id="logoC" src="Img\Page_contacter\logo_intsa_2_bis.png" alt="Logo Instagram">
-                            </a>
-                            <p>alice-alexander</p>    
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">
-                                <img id="logoC" src="Img\Page_contacter\Logo_linkedin_2_bis.png" alt="Logo Linkedin">
-                            </a>
-                            <p>alicemarie.alexander</p>
-                        </div>
-                    </div>
-                </article>
-                <article id="depot">
-                    <h2>Mon Dépot</h2>
-                    <div id="txt">
-                        <div>
-                            <a href="https://github.com/AliceAlexander10/AliceAlexander10.github.io">
-                                <img id="logoC" src="Img/Page_contacter/Logo_github_bis.png" alt="Logo Github">
-                            </a>
-                            <p>AliceAlexander10</p>
-                        </div>
-                    </div>
-                </article>    
+        <main class="container">
+            <h1>Me contacter</h1>
+            <div class="contact-layout">
+                <section class="card contact-intro">
+                    <h2>Travaillons ensemble</h2>
+                    <p>Je recherche une alternance de 24 mois en développement full-stack (web &amp; data), dès que possible, au rythme d'une semaine en école pour trois semaines en entreprise.</p>
+                    <ul class="facts">
+                        <li>Mobilité : 77, 75, 91</li>
+                        <li>Permis B et véhiculée</li>
+                        <li>Mastère 1 Développement, ITIS Évry</li>
+                    </ul>
+                    <a class="btn" href="mailto:alicemarie.alexander@gmail.com">M'écrire un e-mail</a>
+                </section>
+                <ul class="contact-list">
+                    <li>
+                        <a class="contact-row" href="mailto:alicemarie.alexander@gmail.com">
+                            <img src="Img/Page_contacter/Logo_gmail_2.png" alt="">
+                            <span class="c-text">
+                                <strong>E-mail</strong>
+                                <small>alicemarie.alexander@gmail.com</small>
+                            </span>
+                            <span class="c-go" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-row" href="https://www.linkedin.com/in/alice-alexander-b2725a267/" target="_blank" rel="noopener">
+                            <img src="Img/Page_contacter/Logo_linkedin_2_bis.png" alt="">
+                            <span class="c-text">
+                                <strong>LinkedIn</strong>
+                                <small>Alice Alexander</small>
+                            </span>
+                            <span class="c-go" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-row" href="https://github.com/AliceAlexander10" target="_blank" rel="noopener">
+                            <img src="Img/Page_contacter/Logo_github_bis.png" alt="">
+                            <span class="c-text">
+                                <strong>GitHub</strong>
+                                <small>AliceAlexander10</small>
+                            </span>
+                            <span class="c-go" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-row" href="https://www.instagram.com/alicemarie.alexander/" target="_blank" rel="noopener">
+                            <img src="Img/Page_contacter/logo_intsa_2_bis.png" alt="">
+                            <span class="c-text">
+                                <strong>Instagram</strong>
+                                <small>@alicemarie.alexander</small>
+                            </span>
+                            <span class="c-go" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </main>
         <footer>
-            <ol>
-                <li><a href="#reseaux">Mes Réseaux sociaux</a></li>
-                <li><a href="#depot">Mon Dépot</a></li>
-            </ol>    
-            <p>&#xa9 2025 Copyright Alice Alexander</p>    
+            <p><a href="https://www.linkedin.com/in/alice-alexander-b2725a267/">LinkedIn</a> · <a href="https://github.com/AliceAlexander10">GitHub</a> · <a href="mailto:alicemarie.alexander@gmail.com">E-mail</a></p>
+            <p>&copy; <span id="year"></span> Alice Alexander</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
